@@ -1,0 +1,109 @@
+body{
+  /* margin: 0rem 3.5rem; */
+  background: linear-gradient(yellowgreen,crimson);
+  overflow: auto;
+}
+.container {
+  font-family: sans-serif;
+  /* margin: 1rem 3.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.app {
+  background-color: #03fc8c;
+  width: 20%;
+  height: 70vh;
+  border: 5px solid yellowgreen;
+  border-radius: 8px;
+  padding: 2rem;
+  overflow-y: scroll; 
+ 
+  width: min(400px,70%); 
+  /* means the above line width:70% and max-width:400px */
+  /* margin: 2rem; */
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 2px solid crimson;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #4070f4;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid gold;
+  background-color: crimson ;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
+
+.modal-body{
+  
+  background-color: #e2eede;
+
+}
+
+header{
+  padding: 1rem;      
+  /* background:linear-gradient(crimson,lightgreen); */
+  min-width: 100%;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(lightgreen, crimson);
+  min-height: 5vh;
+  min-width: 100%;
+
+}
